@@ -1,0 +1,1 @@
+Placeholder to keep the resources file in GIT.
