@@ -14,6 +14,9 @@ public class Service {
     @NotNull
     private String name;
 
+    @NotNull
+    private String region;
+
     public String getId() {
         return id;
     }
@@ -28,5 +31,13 @@ public class Service {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
     }
 }
