@@ -55,4 +55,13 @@ public class WaitTime {
     public void setProvider(Provider provider) {
         this.provider = provider;
     }
+    
+    @Override
+    public String toString()
+    {
+    	return "provider=" + this.provider.toString() + " : "
+    			+ "service=" + this.service.toString() + " : "
+    			+ "updated=" + this.updated.toString() + " : "
+    			+ "waitTimeInMinutes=" + this.waitTimeInMinutes;
+    }
 }

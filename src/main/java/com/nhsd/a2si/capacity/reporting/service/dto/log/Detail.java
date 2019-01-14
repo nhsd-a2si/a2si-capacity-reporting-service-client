@@ -65,4 +65,14 @@ public class Detail {
     public void setAgeInMinutes(Integer ageInMinutes) {
         this.ageInMinutes = ageInMinutes;
     }
+    
+    @Override
+    public String toString()
+    {
+    	return "ageInMinutes=" + this.ageInMinutes + " : "
+    			+ "id=" + this.id + " : "
+    			+ "serviceId=" + this.serviceId + " : "
+    			+ "timestamp=" + this.timestamp.toString() + " : "
+    			+ "waitTimeInMinutes=" + this.waitTimeInMinutes;
+    }
 }

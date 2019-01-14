@@ -15,5 +15,11 @@ public class Provider {
     public void setName(String name) {
         this.name = name;
     }
+    
+    @Override
+    public String toString()
+    {
+    	return "providerName=" + this.name;
+    }
 
 }

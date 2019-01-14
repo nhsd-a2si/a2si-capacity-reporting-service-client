@@ -99,4 +99,15 @@ public class Header {
     public void setDetails(List<Detail> details) {
         this.details = details;
     }
+    
+    @Override
+    public String toString()
+    {
+    	return "action=" + this.action + " : "
+    			+ "component=" + this.component + " : "
+    			+ "endpoint=" + this.endpoint + " : "
+    			+ "id=" + this.id + " : "
+    			+ "timestamp=" + this.timestamp.toString() + " : "
+    			+ "user=" + this.userId;
+    }
 }
