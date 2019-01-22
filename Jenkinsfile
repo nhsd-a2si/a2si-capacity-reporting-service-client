@@ -23,6 +23,14 @@ pipeline {
                 sh "mvn clean install"
             }
         }
-}
+
+        stage('Build Downstream Projects'){
+            steps{
+                build job: 'a2si-capacity-service/' + env.BRANCH_NAME,
+                propagate: true,
+                wait: false
+            }
+        }
+    }
 
 }
